@@ -8,7 +8,7 @@ public class HUDManager : MonoBehaviour
     public static HUDManager Instance { get; private set; }
 
     [Header("O2 Bar")]
-    [SerializeField] Image o2Fill;
+    [SerializeField] Slider o2Fill;
     [SerializeField] TextMeshProUGUI o2Text;
 
     [Header("Low O2 Warning")]
@@ -53,7 +53,7 @@ public class HUDManager : MonoBehaviour
     // Called by O2System every frame with a 0-1 normalized value
     public void UpdateO2(float normalized)
     {
-        o2Fill.fillAmount = normalized;
+        o2Fill.value = normalized;
         if (o2Text) o2Text.text = Mathf.RoundToInt(normalized * 100f) + "%";
 
         bool warn = normalized < warningThreshold;
