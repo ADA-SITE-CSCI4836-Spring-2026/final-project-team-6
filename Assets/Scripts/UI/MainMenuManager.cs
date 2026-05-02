@@ -13,7 +13,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] Slider sfxSlider;
 
     [Header("Scene")]
-    [SerializeField] string gameSceneName = "SampleScene";
+    [SerializeField] string gameSceneName = "Level";
 
     void Start()
     {

@@ -2919,7 +2919,7 @@ MonoBehaviour:
   settingsPanel: {fileID: 129330069}
   musicSlider: {fileID: 615145649}
   sfxSlider: {fileID: 740166155}
-  gameSceneName: SampleScene
+  gameSceneName: Level
 --- !u!1 &1852225991
 GameObject:
   m_ObjectHideFlags: 0
